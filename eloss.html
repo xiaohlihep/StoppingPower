@@ -1,0 +1,36 @@
+<html>
+
+	<head>
+		<title>Energy loss calculator</title>
+		<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script	src="el.js"></script>
+	</head>
+
+	<body>
+
+		<h2> Range calculator</h2>
+		<form id="frm">
+			Incident Particle:<br>
+<select name="particle">
+  <option value="1">Proton</option>
+  <option value="2">Alpha</option>
+</select>
+<br>
+			Initial energy (MeV):<br>
+			<input type="number" name="E0">
+			<br>
+			Target:<br>
+			<div id="mat" name="mat"></div>
+			<br>
+			Data points:<br>
+			<input type="number" name="binsize" value="100">
+			<br>
+			<input type="submit" value="Calculate">
+		</form>
+		<p>
+		<div id="result"> </div></p>
+
+
+
+	</body>
+</html>
